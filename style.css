@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+h2.course-name {
+    color: red;
+}
+
+h3 {
+    color: black;
+}
+
+ul {
+    margin-bottom: 20px;
+    list-style-type: square;
+} /* Tópicos principais - quadrados */
+
+ul ul {
+    list-style-type: circle;
+} /* Sub-tópicos - círculos */
+
+ol {
+    margin-bottom: 20px;
+    list-style-type: decimal;
+} /* Tópicos enumerados - decimais */
+
+li strong {
+    color: blue;
+}
+
+h3.destaque {
+    color: red;
+}
