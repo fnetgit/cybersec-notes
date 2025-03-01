@@ -140,7 +140,13 @@
           dígitos hexadecimais separados por dois pontos (por exemplo, 2001:0db8:85a3:0000:0000:8a2e:0370:7334). Oferece
           aproximadamente 3,4 × 10³⁸ endereços únicos.</li>
       </ul>
-      <li><strong>Endereço MAC: </strong>Identificação física de dispositivos em uma rede local.</li>
+      <li><strong>Endereço MAC: </strong>Endereço único de 48 bits atribuído a interfaces de rede para identificação e
+        comunicação dentro de uma LAN. Fixo no hardware, mas pode ser alterado via software em alguns casos. O endereço
+        é representado em hexadecimal, geralmente no formato: XX:XX:XX:YY:YY:YY (padrão IEEE 802) ou XX-XX-XX-YY-YY-YY
+        (variação comum). Os primeiros 3 bytes (24 bits) representam o OUI (Organizationally Unique Identifier), que
+        identifica o fabricante do hardware. Os últimos 3 bytes (24 bits) são atribuídos pelo fabricante para
+        identificar cada dispositivo de forma única.
+      </li>
     </ul>
 
     <h3>Tipos de redes</h3>
@@ -154,13 +160,43 @@
 
     <h3>Componentes e Dispositivos de Rede: </h3>
     <ul>
-      <li><strong>Hub: </strong></li>
-      <li><strong>Switch: </strong></li>
-      <li><strong>Router: </strong></li>
-      <li><strong>Modem: </strong></li>
-      <li><strong>Server: </strong></li>
-      <li><strong>Proxy: </strong></li>
-      <li><strong>Firewall: </strong>Sistema que monitora e controla o tráfego de rede.</li>
+      <li><strong>Hub: </strong>Dispositivo que recebe os dados de uma porta e os retransmite para todas as outras
+        portas da rede, sem analisar ou direcionar o tráfego. Isso significa que ele trabalha em broadcast, enviando os
+        pacotes para todos os dispositivos conectados, o que pode gerar colisões e congestionamento na rede. Como não
+        faz nenhuma filtragem ou controle de tráfego, o hub foi substituído por switches, que são mais eficientes. Opera
+        na 1ª camada do modelo OSI (física).</li>
+      <li><strong>Switch: </strong>Dispositivo que encaminha pacotes de dados de forma eficiente. Diferente do hub, ele
+        aprende os endereços MAC dos dispositivos conectados e envia os dados apenas para o destinatário correto,
+        reduzindo colisões e melhorando o desempenho da rede. Opera na 2ª camada(enlace). Switches mais avançados podem
+        operar na camada 3, funcionando também como roteadores.</li>
+      <li><strong>Router: </strong>Dispositivo que é responsável por conectar diferentes redes, roteando pacotes de
+        dados com base nos endereços IP. Ele escolhe a melhor rota para os pacotes chegarem ao destino. Um exemplo comum
+        é o roteador doméstico, que conecta redes locais à internet e gerencia o tráfego entre múltiplos dispositivos.
+        Opera na 3ª camada (rede).</li>
+      <li><strong>Modem: </strong>Dispositivo que converte sinais digitais em analógicos (e vice-versa) para permitir a
+        comunicação entre redes diferentes. Por exemplo, em conexões DSL, o modem converte os sinais do provedor para um
+        formato que os dispositivos da rede local possam entender. Muitos modems modernos já vêm integrados a
+        roteadores. Opera na 1ª camada (física). No entanto, modems modernos podem ter funcionalidades adicionais, como
+        roteamento e NAT (Network Address Translation), que pertencem à 3ª camada (rede). Isso acontece porque muitos
+        dispositivos hoje combinam modem e roteador no mesmo equipamento.</li>
+      <li><strong>Server: </strong>Computador ou sistema que fornece serviços, recursos ou dados para outros
+        dispositivos na rede (clientes). Pode desempenhar diversas funções, como servidor web (hospeda sites), servidor
+        de arquivos (armazenamento e compartilhamento de arquivos), servidor de banco de dados, entre outros. O servidor
+        pode operar em diferentes camadas, dependendo do tipo de serviço. Na camada 4 (transporte), se estiver
+        utilizando protocolos de transporte como TCP/UDP. Na camada 7 (aplicação), Se for um servidor web ou de banco de
+        dados, ele interage com protocolos como HTTP, FTP, SQL, etc.
+      </li>
+      <li><strong>Proxy: </strong>Servidor intermediário entre o cliente e a internet. Ele pode armazenar em cache
+        conteúdos acessados com frequência para melhorar o desempenho, ocultar o IP real do usuário para aumentar a
+        privacidade ou bloquear acessos indesejados. Pode ser usado para filtragem de conteúdo, balanceamento de carga e
+        segurança. O proxy opera principalmente nas camadas 3 (Rede) e 7 (Aplicação), já que ele pode redirecionar o
+        tráfego de rede com base em endereços IP ou analisar o conteúdo das aplicações.
+      </li>
+      <li><strong>Firewall: </strong>Sistema que monitora e controla o tráfego de rede com base em regras de segurança.
+        Pode ser implementado como software ou hardware. Atua bloqueando acessos não autorizados e prevenindo ataques,
+        operando principalmente nas camadas de rede (3ª) e transporte (4ª), podendo chegar até a aplicação (7ª).
+        Firewalls podem ser configurados para permitir ou negar tráfego com base em IPs, portas, protocolos e até
+        análise de pacotes (Deep Packet Inspection - DPI).</li>
     </ul>
 
     <h3>Computação em Nuvem: </h3>
@@ -242,19 +278,66 @@
     <li><strong>Porta: </strong>Uma porta é um local baseado em software que organiza o envio e o recebimento de dados
       entre dispositivos em uma rede. As portas dividem o tráfego da rede em segmentos com base no serviço que elas
       executarão entre dois dispositivos.</li>
-    <li><strong>Modelo OSI (Open Systems Interconnection): </strong>Modelo de sete camadas que padroniza a comunicação
-      em redes.</li>
-    <li><strong>UDP (User Datagram Protocol):</strong></li>
-    <li><strong>HTTP/HTTPS (Hypertext Transfer Protocol/Secure): </strong></li>
-    <li><strong>FTP (File Transfer Protocol): O Protocolo de Transferência de Arquivos permite que usuários
-        autorizados possam fazer download e upload de arquivos de um servidor FTP, um computador que armazena os
-        dados.</strong>
-    </li>
-    <li><strong>DNS (Domain Name System): </strong> O Sistema de Nomes de Domínios funciona como um sistema de
-      tradução de endereços IP para nomes de domínios.</li>
-    <li><strong>SSH (Secure Shell): </strong>Protocolo que garante que cliente e servidor remoto troquem informações
-      de maneira segura e dinâmica. O processo é capaz de criptografar os arquivos enviados ao diretório do servidor,
-      garantindo que alterações e o envio de dados sejam realizados da melhor forma.</li>
+    </ul>
+
+    <ul>
+      <li><strong>Modelo OSI (Open Systems Interconnection): </strong>É um modelo teórico criado pela ISO (International
+        Organization for Standardization) para padronizar a comunicação entre sistemas de redes. Ele organiza essa
+        comunicação em 7 camadas, cada uma com funções específicas.</li>
+      <ol>
+        <li><strong>Camada Física: </strong>A camada física é responsável por transmitir os bits brutos pelo meio de
+          comunicação, como cabos de rede, ondas de rádio e fibra óptica. Ela define características elétricas,
+          mecânicas e ópticas, incluindo voltagem, frequência e modulação do sinal. Nessa camada, dispositivos como
+          hubs, repetidores e conectores atuam na transmissão dos dados sem qualquer interpretação do conteúdo.</li>
+        <li><strong>Camada de Enlace de Dados: </strong>A camada de enlace garante que os dados sejam entregues de forma
+          confiável dentro de uma rede local, corrigindo erros e controlando o fluxo de dados. Essa camada usa endereços
+          físicos (endereços MAC), para identificar dispositivos. Switches e bridges operam nessa camada, organizando os
+          dados em quadros antes da transmissão.</li>
+        <ul>
+          <li>
+            <strong>O MAC (Media Access Control)</strong> é um sistema de controle responsável por gerenciar a
+            comunicação entre dispositivos
+            em uma rede local. Ele define como os dispositivos enviam e recebem dados, garantindo que a transmissão
+            ocorra de
+            forma organizada e sem interferências. O MAC usa endereços físicos exclusivos para identificar cada
+            dispositivo
+            dentro da rede.
+          </li>
+        </ul>
+        <li><strong>Camada de Rede: </strong>A camada de rede é responsável pelo roteamento dos pacotes entre diferentes
+          redes, utilizando endereços IP para identificar dispositivos. Essa camada escolhe o melhor caminho para os
+          dados chegarem ao destino. Roteadores trabalham nessa camada, encaminhando pacotes baseados em endereçamento
+          lógico, como o IPv4 e IPv6.</li>
+        <li><strong>Camada de Transporte: </strong>A camada de transporte gerencia a comunicação entre os sistemas
+          finais, garantindo que os dados sejam entregues corretamente e na ordem certa. Ela pode fornecer um serviço
+          confiável, usando o protocolo TCP (orientado à conexão), ou um serviço mais rápido, mas sem garantias, usando
+          o protocolo UDP (não orientado à conexão).</li>
+        <ul>
+          <li><strong>UDP (User Datagram Protocol):</strong></li>
+        </ul>
+        <li><strong>Camada de Sessão: </strong>A camada de sessão estabelece, mantém e encerra conexões entre aplicações
+          em dispositivos diferentes. Ela permite que sessões de comunicação permaneçam ativas enquanto necessário e
+          pode reiniciar transmissões interrompidas.</li>
+        <li><strong>Camada de Apresentação: </strong>A camada de apresentação transforma os dados para que possam ser
+          compreendidos pela camada de aplicação. Ela realiza tarefas como criptografia (SSL/TLS), compressão e
+          conversão de formatos de arquivos, como codificação MIME para anexos de e-mail.</li>
+        <li><strong>Camada de Aplicação: </strong>A camada de aplicação é a interface entre o usuário e a rede,
+          permitindo que os programas utilizem os serviços da internet. Protocolos como HTTP, HTTPS, SMTP, FTP e DNS
+          operam aqui, garantindo que e-mails sejam enviados, páginas da web sejam carregadas e arquivos sejam
+          transferidos corretamente.</li>
+        <ul>
+          <li><strong>HTTP/HTTPS (Hypertext Transfer Protocol/Secure): </strong></li>
+          <li><strong>FTP (File Transfer Protocol): </strong>O Protocolo de Transferência de Arquivos permite que
+            usuários autorizados possam fazer download e upload de arquivos de um servidor FTP, um computador que
+            armazena os dados.
+          </li>
+          <li><strong>DNS (Domain Name System): </strong> O Sistema de Nomes de Domínios funciona como um sistema de
+            tradução de endereços IP para nomes de domínios.</li>
+          <li><strong>SSH (Secure Shell): </strong>Protocolo que garante que cliente e servidor remoto troquem
+            informações de maneira segura e dinâmica. O processo é capaz de criptografar os arquivos enviados ao
+            diretório do servidor, garantindo que alterações e o envio de dados sejam realizados da melhor forma.</li>
+        </ul>
+      </ol>
     </ul>
 
     <h3>Ataques Comuns em Redes:</h3>
