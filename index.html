@@ -214,11 +214,28 @@
 
     <h3>Network Communication</h3>
     <ul>
-      <li><strong>Data Packet: </strong>falar o que é e a estrutura dele</li>
+      <li><strong>Data Packet: </strong>Um pacote de dados é a unidade básica de transmissão de informações na rede.
+        Quando dados são enviados pela rede, eles são fragmentados em pacotes para facilitar o roteamento, controle de
+        erro e transmissão eficiente. Cada pacote tem diferentes partes que desempenham funções específicas, como
+        endereçamento, controle de erros, e os próprios dados. São divididos em três partes: </li>
       <ul>
-        <li><strong>suntopico header</strong>ip adress, mac, Protocol number</li>
-        <li><strong>subtopico body</strong></li>
-        <li><strong>subtopico footer</strong></li>
+        <li><strong>Cabeçalho (header): </strong>Contém informações essenciais para o roteamento e a entrega correta do
+          pacote. Geralmente se encontra o<strong>Endereço IP</strong>: Para identificar a origem e o destino no nível
+          da rede, o <strong>Endereço MAC</strong>: Identifica o dispositivo de origem e destino no nível de enlace de
+          dados e o <strong>Número de Protocolo</strong>: Indica o protocolo usado no pacote (por exemplo, TCP, UDP).
+        </li>
+        <li><strong>Corpo (body): </strong>O corpo contém os dados reais que estão sendo transmitidos. Esta é a parte
+          principal do pacote e pode ser qualquer tipo de informação que o remetente deseja enviar para o destinatário.
+          Pode incluir mensagens, arquivos, comandos ou respostas de protocolos de rede</li>
+        <li><strong>Rodapé (footer): </strong>Geralmente contém informações que auxiliam na verificação da integridade
+          dos dados transmitidos e indicam o fim do pacote. Como <strong>Checksum:</strong> Usado para verificação de
+          integridade. Ele permite que o receptor verifique se os dados não foram corrompidos durante a transmissão.
+          <strong>Trailer de Encerramento:</strong> Alguns protocolos, como o Ethernet, podem incluir um trailer de
+          encerramento indicando o final do pacote de dados. <strong>Sequência de Identificação ou Número de
+            Pacote:</strong> Pode ser incluído para manter a ordem de pacotes em protocolos que requerem reorganização
+          de pacotes. <strong>Informações de Padding:</strong> Em alguns casos, o footer pode incluir padding para
+          garantir que o tamanho do pacote seja múltiplo de uma determinada unidade de tamanho (como 8 bits ou 4 bytes).
+        </li>
       </ul>
       <li><strong>Bandwidth: </strong>the amount of data a device receives every second.</li>
       <li><strong>Packet sniffing: </strong>is the practice of capturing and inspecting data packets across the network.
