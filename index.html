@@ -322,27 +322,43 @@
           lógico, como o IPv4 e IPv6.</li>
         <li><strong>Camada de Transporte: </strong>A camada de transporte gerencia a comunicação entre os sistemas
           finais, garantindo que os dados sejam entregues corretamente e na ordem certa. Ela pode fornecer um
-          serviço
-          confiável, usando o protocolo TCP (orientado à conexão), ou um serviço mais rápido, mas sem garantias,
-          usando
-          o protocolo UDP (não orientado à conexão).</li>
+          serviço confiável, usando o protocolo TCP (orientado à conexão), ou um serviço mais rápido, mas sem garantias,
+          usando o protocolo UDP (não orientado à conexão).</li>
         <ul>
-          <li><strong>UDP (User Datagram Protocol):</strong></li>
+          <li><strong>UDP (User Datagram Protocol): </strong>O Protocolo de Datagrama de Usuário é um protocolo de
+            comunicação não orientado à conexão, ou seja, não estabelece um vínculo formal entre os dispositivos antes
+            de transmitir dados. Ele não garante a entrega nem a ordem dos pacotes, mas, em compensação, é mais rápido e
+            consome menos recursos que o TCP. Por essa razão, é ideal para aplicações onde a velocidade é mais
+            importante que a confiabilidade, como transmissões de vídeo, jogos online e chamadas de voz.</li>
         </ul>
         <li><strong>Camada de Sessão: </strong>A camada de sessão estabelece, mantém e encerra conexões entre
-          aplicações
-          em dispositivos diferentes. Ela permite que sessões de comunicação permaneçam ativas enquanto necessário e
-          pode reiniciar transmissões interrompidas.</li>
+          aplicações em dispositivos diferentes. Ela permite que sessões de comunicação permaneçam ativas enquanto
+          necessário e pode reiniciar transmissões interrompidas.</li>
         <li><strong>Camada de Apresentação: </strong>A camada de apresentação transforma os dados para que possam
-          ser
-          compreendidos pela camada de aplicação. Ela realiza tarefas como criptografia (SSL/TLS), compressão e
+          ser compreendidos pela camada de aplicação. Ela realiza tarefas como criptografia (SSL/TLS), compressão e
           conversão de formatos de arquivos, como codificação MIME para anexos de e-mail.</li>
         <li><strong>Camada de Aplicação: </strong>A camada de aplicação é a interface entre o usuário e a rede,
           permitindo que os programas utilizem os serviços da internet. Protocolos como HTTP, HTTPS, SMTP, FTP e DNS
           operam aqui, garantindo que e-mails sejam enviados, páginas da web sejam carregadas e arquivos sejam
           transferidos corretamente.</li>
         <ul>
-          <li><strong>HTTP/HTTPS (Hypertext Transfer Protocol/Secure): </strong></li>
+          <li><strong>HTTP/HTTPS (Hypertext Transfer Protocol/Secure): </strong>O Protocolo de Transferência de
+            Hipertexto é responsável pela comunicação entre navegadores e servidores web, permitindo o acesso a páginas
+            da internet. O HTTP não oferece criptografia, o que pode expor dados a interceptações. Já o HTTPS, sua
+            versão segura, utiliza criptografia por meio do protocolo TLS/SSL, garantindo a proteção das informações
+            transmitidas.</li>
+          <ul>
+            <li><strong>SSL (Secure Sockets Layer): </strong>A Camada de Soquetes Segura foi um dos primeiros protocolos
+              de segurança desenvolvidos para criptografar a comunicação na internet, protegendo dados transmitidos
+              entre servidores e navegadores. Apesar de ter sido amplamente adotado, tornou-se obsoleto devido a
+              vulnerabilidades que comprometeram sua segurança. Hoje, o SSL foi substituído por versões mais avançadas
+              do TLS, mas o termo ainda é usado informalmente para se referir à criptografia em sites HTTPS.</li>
+            <li><strong>TLS (Transport Layer Security): </strong>A Segurança da Camada de Transporte é a evolução do
+              SSL, oferecendo criptografia mais forte e maior proteção contra ataques cibernéticos. Ele garante que os
+              dados transmitidos permaneçam privados e nalterados, sendo amplamente utilizado em conexões HTTPS, e-mails
+              e outras comunicações seguras. As versões mais utilizadas atualmente são TLS 1.2 e TLS 1.3, que melhoram o
+              desempenho e a segurança da transmissão de informações.</li>
+          </ul>
           <li><strong>FTP (File Transfer Protocol): </strong>O Protocolo de Transferência de Arquivos permite que
             usuários autorizados possam fazer download e upload de arquivos de um servidor FTP, um computador que
             armazena os dados.
