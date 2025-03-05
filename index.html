@@ -236,7 +236,7 @@
         transferidos pela rede. Tem 4 camadas: Camada de Acesso à rede, Camada de Internet, Camada de Transporte e
         Camada de Aplicação.
       </li>
-      <ul>
+      <ol>
         <li><strong>Camada de Acesso à rede: </strong>É responsável pela transmissão física de dados entre dispositivos
           na mesma rede. Ela lida com os detalhes da interface com o hardware da rede e os métodos de acesso ao meio
           físico. Tecnologias como Ethernet e Wi-Fi operam nesta camada, garantindo que os dados sejam formatados
@@ -257,7 +257,7 @@
           gerenciamento de sessões de comunicação, a facilitação da troca de dados entre softwares, a verificação de
           identidades e permissões dos usuários e a formatação e codificação de dados para serem processados pelas
           aplicações.</li>
-      </ul>
+      </ol>
       <li><strong>TCP (Transmission Control Protocol): </strong>Permite que dois dispositivos estabeleçam uma conexão e
         transmitam dados de forma organizada e confiável. Ele garante que os pacotes de dados cheguem ao destino
         correto.
@@ -268,25 +268,27 @@
         pacotes, apenas envia para o destino. Ele também divide pacotes grandes em fragmentos menores e garante a
         reassemblagem no destino. Possui versões, como IPv4 e IPv6,
         que determinam não só o formato dos endereços, mas também aspectos de funcionamento, como a fragmentação de
-        pacotes. <ul>
+        pacotes.
+        <ul>
           <li>
             No <strong>IPv4</strong>, os pacotes podem fragmentados para se adequar às limitações da rede e, em seguida,
             reagrupados no destino.
           </li>
-      </li>
-      <li>
-        No <strong>IPv6</strong>, a fragmentação é tratada de forma diferente: os roteadores não
-        fragmentam os pacotes, e cabe ao dispositivo de origem ajustar o tamanho dos pacotes.
-      </li>
-    </ul>
-    </li>
-    <li><strong>Porta: </strong>Uma porta é um local baseado em software que organiza o envio e o recebimento de dados
-      entre dispositivos em uma rede. As portas dividem o tráfego da rede em segmentos com base no serviço que elas
-      executarão entre dois dispositivos.</li>
+          <li>No <strong>IPv6</strong>, a fragmentação é tratada de forma diferente: os roteadores não fragmentam os
+            pacotes, e cabe ao dispositivo de origem ajustar o tamanho dos pacotes.
+          </li>
+        </ul>
+
+      <li><strong>Porta: </strong>Uma porta é um local baseado em software que organiza o envio e o recebimento de
+        dados
+        entre dispositivos em uma rede. As portas dividem o tráfego da rede em segmentos com base no serviço que
+        elas
+        executarão entre dois dispositivos.</li>
     </ul>
 
     <ul>
-      <li><strong>Modelo OSI (Open Systems Interconnection): </strong>É um modelo teórico criado pela ISO (International
+      <li><strong>Modelo OSI (Open Systems Interconnection): </strong>É um modelo teórico criado pela ISO
+        (International
         Organization for Standardization) para padronizar a comunicação entre sistemas de redes. Ele organiza essa
         comunicação em 7 camadas, cada uma com funções específicas.</li>
       <ol>
@@ -294,33 +296,45 @@
           comunicação, como cabos de rede, ondas de rádio e fibra óptica. Ela define características elétricas,
           mecânicas e ópticas, incluindo voltagem, frequência e modulação do sinal. Nessa camada, dispositivos como
           hubs, repetidores e conectores atuam na transmissão dos dados sem qualquer interpretação do conteúdo.</li>
-        <li><strong>Camada de Enlace de Dados: </strong>A camada de enlace garante que os dados sejam entregues de forma
-          confiável dentro de uma rede local, corrigindo erros e controlando o fluxo de dados. Essa camada usa endereços
-          físicos (endereços MAC), para identificar dispositivos. Switches e bridges operam nessa camada, organizando os
+        <li><strong>Camada de Enlace de Dados: </strong>A camada de enlace garante que os dados sejam entregues de
+          forma
+          confiável dentro de uma rede local, corrigindo erros e controlando o fluxo de dados. Essa camada usa
+          endereços
+          físicos (endereços MAC), para identificar dispositivos. Switches e bridges operam nessa camada,
+          organizando
+          os
           dados em quadros antes da transmissão.</li>
         <ul>
           <li>
             <strong>O MAC (Media Access Control)</strong> é um sistema de controle responsável por gerenciar a
-            comunicação entre dispositivos em uma rede local. Ele define como os dispositivos enviam e recebem dados,
-            garantindo que a transmissão ocorra de forma organizada e sem interferências. O MAC usa endereços físicos
+            comunicação entre dispositivos em uma rede local. Ele define como os dispositivos enviam e recebem
+            dados,
+            garantindo que a transmissão ocorra de forma organizada e sem interferências. O MAC usa endereços
+            físicos
             exclusivos para identificar cada dispositivo dentro da rede.
           </li>
         </ul>
-        <li><strong>Camada de Rede: </strong>A camada de rede é responsável pelo roteamento dos pacotes entre diferentes
+        <li><strong>Camada de Rede: </strong>A camada de rede é responsável pelo roteamento dos pacotes entre
+          diferentes
           redes, utilizando endereços IP para identificar dispositivos. Essa camada escolhe o melhor caminho para os
-          dados chegarem ao destino. Roteadores trabalham nessa camada, encaminhando pacotes baseados em endereçamento
+          dados chegarem ao destino. Roteadores trabalham nessa camada, encaminhando pacotes baseados em
+          endereçamento
           lógico, como o IPv4 e IPv6.</li>
         <li><strong>Camada de Transporte: </strong>A camada de transporte gerencia a comunicação entre os sistemas
-          finais, garantindo que os dados sejam entregues corretamente e na ordem certa. Ela pode fornecer um serviço
-          confiável, usando o protocolo TCP (orientado à conexão), ou um serviço mais rápido, mas sem garantias, usando
+          finais, garantindo que os dados sejam entregues corretamente e na ordem certa. Ela pode fornecer um
+          serviço
+          confiável, usando o protocolo TCP (orientado à conexão), ou um serviço mais rápido, mas sem garantias,
+          usando
           o protocolo UDP (não orientado à conexão).</li>
         <ul>
           <li><strong>UDP (User Datagram Protocol):</strong></li>
         </ul>
-        <li><strong>Camada de Sessão: </strong>A camada de sessão estabelece, mantém e encerra conexões entre aplicações
+        <li><strong>Camada de Sessão: </strong>A camada de sessão estabelece, mantém e encerra conexões entre
+          aplicações
           em dispositivos diferentes. Ela permite que sessões de comunicação permaneçam ativas enquanto necessário e
           pode reiniciar transmissões interrompidas.</li>
-        <li><strong>Camada de Apresentação: </strong>A camada de apresentação transforma os dados para que possam ser
+        <li><strong>Camada de Apresentação: </strong>A camada de apresentação transforma os dados para que possam
+          ser
           compreendidos pela camada de aplicação. Ela realiza tarefas como criptografia (SSL/TLS), compressão e
           conversão de formatos de arquivos, como codificação MIME para anexos de e-mail.</li>
         <li><strong>Camada de Aplicação: </strong>A camada de aplicação é a interface entre o usuário e a rede,
@@ -337,17 +351,18 @@
             tradução de endereços IP para nomes de domínios.</li>
           <li><strong>SSH (Secure Shell): </strong>Protocolo que garante que cliente e servidor remoto troquem
             informações de maneira segura e dinâmica. O processo é capaz de criptografar os arquivos enviados ao
-            diretório do servidor, garantindo que alterações e o envio de dados sejam realizados da melhor forma.</li>
+            diretório do servidor, garantindo que alterações e o envio de dados sejam realizados da melhor forma.
+          </li>
         </ul>
       </ol>
     </ul>
 
     <h3>Ataques Comuns em Redes:</h3>
     <ul>
-      <li><strong>DoS (Denial of Service): </strong>Ataque que visa sobrecarregar um sistema, tornando-o indisponível.
-      </li>
-      <li><strong>DDoS (Distributed Denial of Service): </strong>Ataque DoS distribuído, usando múltiplos dispositivos
-        para amplificar o impacto.</li>
+      <li><strong>DoS (Denial of Service): </strong>Ataque que visa sobrecarregar um sistema, tornando-o
+        indisponível.</li>
+      <li><strong>DDoS (Distributed Denial of Service): </strong>Ataque DoS distribuído, usando múltiplos
+        dispositivos para amplificar o impacto.</li>
       <li><strong>IP Spoofing: </strong>Técnica de falsificação do endereço IP para enganar sistemas de segurança.</li>
       <li><strong>Man-in-the-Middle (MitM): </strong>Interceptação e possível alteração de comunicação entre dois
         dispositivos.</li>
