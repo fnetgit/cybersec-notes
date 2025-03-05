@@ -175,7 +175,7 @@
         na 1ª camada do modelo OSI (física).</li>
       <li><strong>Switch: </strong>Dispositivo que encaminha pacotes de dados de forma eficiente. Diferente do hub, ele
         aprende os endereços MAC dos dispositivos conectados e envia os dados apenas para o destinatário correto,
-        reduzindo colisões e melhorando o desempenho da rede. Opera na 2ª camada(enlace). Switches mais avançados podem
+        reduzindo colisões e melhorando o desempenho da rede. Opera na 2ª camada (enlace). Switches mais avançados podem
         operar na camada 3, funcionando também como roteadores.</li>
       <li><strong>Router: </strong>Dispositivo que é responsável por conectar diferentes redes, roteando pacotes de
         dados com base nos endereços IP. Ele escolhe a melhor rota para os pacotes chegarem ao destino. Um exemplo comum
@@ -207,49 +207,27 @@
         análise de pacotes (Deep Packet Inspection - DPI).</li>
     </ul>
 
-    <h3>Computação em Nuvem: </h3>
+    <h3>Computação em Nuvem:</h3>
     <ul>
-      <li><strong>Cloud Network: </strong></li>
-      <li><strong>Cloud Service Providers (CSPs): </strong>Os Provedores de Serviços em Nuvem...</li>
-      <ul>
-        <li><strong>Software as a service (SaaS): </strong></li>
-        <li><strong>Infrastructure as a service (IaaS): </strong></li>
-        <li><strong>Platform as a service (PaaS): </strong></li>
-      </ul>
-      <li><strong>Hybrid cloud environments: </strong></li>
-      <li><strong>Software-defined networks(SDNs): </strong></li>
-    </ul>
-
-    <h3>Network Communication</h3>
-    <ul>
-      <li><strong>Data Packet: </strong>Um pacote de dados é a unidade básica de transmissão de informações na rede.
-        Quando dados são enviados pela rede, eles são fragmentados em pacotes para facilitar o roteamento, controle de
-        erro e transmissão eficiente. Cada pacote tem diferentes partes que desempenham funções específicas, como
-        endereçamento, controle de erros, e os próprios dados. São divididos em três partes: </li>
-      <ul>
-        <li><strong>Cabeçalho (header): </strong>Contém informações essenciais para o roteamento e a entrega correta do
-          pacote. Geralmente se encontra o <strong>Endereço IP</strong>: Para identificar a origem e o destino no nível
-          da rede, o <strong>Endereço MAC</strong>: Identifica o dispositivo de origem e destino no nível de enlace de
-          dados e o <strong>Número de Protocolo</strong>: Indica o protocolo usado no pacote (por exemplo, TCP, UDP).
-        </li>
-        <li><strong>Corpo (body): </strong>O corpo contém os dados reais que estão sendo transmitidos. Esta é a parte
-          principal do pacote e pode ser qualquer tipo de informação que o remetente deseja enviar para o destinatário.
-          Pode incluir mensagens, arquivos, comandos ou respostas de protocolos de rede</li>
-        <li><strong>Rodapé (footer): </strong>Geralmente contém informações que auxiliam na verificação da integridade
-          dos dados transmitidos e indicam o fim do pacote. Como <strong>Checksum:</strong> Usado para verificação de
-          integridade. Ele permite que o receptor verifique se os dados não foram corrompidos durante a transmissão.
-          <strong>Trailer de Encerramento:</strong> Alguns protocolos, como o Ethernet, podem incluir um trailer de
-          encerramento indicando o final do pacote de dados. <strong>Sequência de Identificação ou Número de
-            Pacote:</strong> Pode ser incluído para manter a ordem de pacotes em protocolos que requerem reorganização
-          de pacotes. <strong>Informações de Padding:</strong> Em alguns casos, o footer pode incluir padding para
-          garantir que o tamanho do pacote seja múltiplo de uma determinada unidade de tamanho (como 8 bits ou 4 bytes).
-        </li>
-      </ul>
-      <li><strong>Bandwidth (Largura de banda): </strong>A quantidade máxima de dados que podem ser transmitidos por uma
-        rede em um determinado período de tempo, geralmente medido em bits por segundo (bps).</li>
-      <li><strong>Packet sniffing (Farejamento de pacotes): </strong>Prática de capturar e inspecionar pacotes de
-        dados na rede, podendo ser usada para monitoramento legítimo ou para ataques maliciosos.
+      <li><strong>Cloud Network: </strong>Arquitetura de rede que suporta serviços em nuvem, permitindo comunicação e
+        compartilhamento de recursos via internet.</li>
+      <li><strong>Cloud Service Providers (CSPs): </strong>Provedores de Serviços em Nuvem que oferecem modelos
+        distintos de computação em nuvem:
+        <ul>
+          <li><strong>Software as a Service (SaaS): </strong>Aplicações hospedadas na nuvem e acessadas via internet,
+            sem necessidade de instalação local.</li>
+          <li><strong>Infrastructure as a Service (IaaS): </strong>Infraestrutura virtualizada, incluindo servidores,
+            armazenamento e redes configuráveis remotamente.</li>
+          <li><strong>Platform as a Service (PaaS): </strong>Ambiente de desenvolvimento e execução de aplicativos na
+            nuvem, incluindo ferramentas e frameworks.</li>
+        </ul>
       </li>
+      <li><strong>Hybrid Cloud Environments: </strong>Ambientes de Nuvem Híbrida são uma combinação entre infraestrutura
+        local (on-premise) e serviços em nuvem, para maior flexibilidade e redução de custos. Quando múltiplos CSPs são
+        utilizados, o ambiente é chamado de multi-cloud.</li>
+      <li><strong>Software-Defined Networks (SDNs): </strong>Redes Definidas por Software são redes virtualizadas
+        gerenciadas por software, permitindo configurações dinâmicas e maior automação. Elas incluem firewalls,
+        roteadores e switches definidos por software, otimizando desempenho e segurança.</li>
     </ul>
 
     <h3>Modelos de comunicação de redes: </h3>
@@ -323,12 +301,9 @@
         <ul>
           <li>
             <strong>O MAC (Media Access Control)</strong> é um sistema de controle responsável por gerenciar a
-            comunicação entre dispositivos
-            em uma rede local. Ele define como os dispositivos enviam e recebem dados, garantindo que a transmissão
-            ocorra de
-            forma organizada e sem interferências. O MAC usa endereços físicos exclusivos para identificar cada
-            dispositivo
-            dentro da rede.
+            comunicação entre dispositivos em uma rede local. Ele define como os dispositivos enviam e recebem dados,
+            garantindo que a transmissão ocorra de forma organizada e sem interferências. O MAC usa endereços físicos
+            exclusivos para identificar cada dispositivo dentro da rede.
           </li>
         </ul>
         <li><strong>Camada de Rede: </strong>A camada de rede é responsável pelo roteamento dos pacotes entre diferentes
