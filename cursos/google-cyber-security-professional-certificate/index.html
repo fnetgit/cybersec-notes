@@ -1,520 +1,215 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Anotações de Cybersecurity</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anotações de Cybersecurity</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <section> <!-- Curso 1 -->
-    <h2 class="course-name">Foundations of Cybersecurity</h2>
+    <header>
+        <h1>CYBERSECURITY NOTES</h1>
+    </header>
 
-    <h3>Conceitos Básicos</h3>
-    <ul>
-      <li><strong>Cybersegurança: </strong>Garantia da confidencialidade, integridade e disponibilidade da informação.
-        Trata-se da prática de proteger sistemas, redes e dados contra acessos não autorizados, danos ou ataques.</li>
-      <li><strong>SIEM tools (Security Information and Event Management): </strong>Ferramentas para monitoramento de
-        ameaças e incidentes em tempo real, ajudando na identificação de comportamentos suspeitos.</li>
-    </ul>
+    <div class="container">
+        <section>
+            <h2 class="course-name"> Foundations of Cybersecurity</h2>
 
-    <h3>Relacionando Ameaças, Vulnerabilidades, Riscos e Ataques</h3>
-    <ul>
-      <li><strong>Ameaças: </strong>São os <strong>perigos</strong> que podem causar danos aos sistemas, dados ou redes.
-      </li>
-      <li><strong>Malware: </strong>É uma forma de ameaça cibernética, sendo qualquer software malicioso projetado para
-        prejudicar, explorar ou invadir sistemas, dispositivos ou redes. Alguns exemplos são:</li>
-      <ul>
-        <li><strong>Vírus: </strong>Se propaga e infecta outros arquivos ou sistemas.</li>
-        <li><strong>Ransomware: </strong>Bloqueia ou criptografa dados e exige um pagamento para liberá-los.</li>
-        <li><strong>Worms: </strong>Se espalham automaticamente através de redes, explorando vulnerabilidades.</li>
-        <li><strong>Trojan (Cavalo de Troia): </strong>Malware disfarçado de software legítimo.</li>
-        <li><strong>Spyware: </strong>Espiona o usuário e coleta informações pessoais.</li>
-        <li><strong>Adware: </strong>Exibe anúncios indesejados e coleta dados para marketing.</li>
-        <li><strong>Keylogger: </strong>Malware que registra as teclas digitadas pelo usuário, com o objetivo de roubar
-          informações como senhas e dados bancários.</li>
-      </ul>
-      <li><strong>Vulnerabilidades: </strong>São as <strong>fraquezas</strong> nos sistemas que podem ser exploradas por
-        ameaças.</li>
-      <li><strong>Riscos: </strong>São as <strong>probabilidades</strong> de uma ameaça explorar uma vulnerabilidade.
-      </li>
-      <li><strong>Ataques: </strong>São as <strong>ações concretas</strong> que exploram vulnerabilidades para causar
-        danos.</li>
-    </ul>
+            <h3>Conceitos Básicos</h3>
+            <ul>
+              <div class="card-main">
+                <li><strong>Cybersegurança:</strong> Garantia da confidencialidade, integridade e disponibilidade da informação. Prática de proteger sistemas, redes e dados contra acessos não autorizados, danos ou ataques.</li>
+                <li><strong>SIEM tools (Security Information and Event Management):</strong> Ferramentas para monitoramento de ameaças e incidentes em tempo real, ajudando na identificação de comportamentos suspeitos.</li>
+                </div>
+            </ul>
 
-    <h3>PII e SPII</h3>
-    <ul>
-      <li><strong>PII (Personally Identifiable Information): </strong>Qualquer informação que possa identificar uma
-        pessoa, como nome, endereço, número de telefone, etc.</li>
-      <li><strong>SPII (Sensitive Personally Identifiable Information): </strong>Informações mais sensíveis, como
-        números de segurança social, dados financeiros e registros médicos, que requerem proteção adicional devido ao
-        risco de roubo ou uso indevido.</li>
-    </ul>
+            <h3>Ameaças, Vulnerabilidades, Riscos e Ataques</h3>
+            <ul>
+                <li><strong>Ameaças:</strong> São os perigos que podem causar danos aos sistemas, dados ou redes.</li>
+                <li><strong>Malware:</strong> Software malicioso projetado para prejudicar, explorar ou invadir sistemas. Tipos principais:
+                    <ul class="card-main-grid">
+                        <li><strong>Vírus:</strong> Se propaga e infecta outros arquivos ou sistemas.</li>
+                        <li><strong>Ransomware:</strong> Bloqueia ou criptografa dados, exigindo pagamento para liberação.</li>
+                        <li><strong>Worms:</strong> Se espalham automaticamente pela rede explorando vulnerabilidades.</li>
+                        <li><strong>Trojan:</strong> Malware disfarçado de software legítimo.</li>
+                        <li><strong>Spyware:</strong> Espiona o usuário e coleta informações pessoais.</li>
+                        <li><strong>Adware:</strong> Exibe anúncios indesejados e coleta dados para marketing.</li>
+                        <li><strong>Keylogger:</strong> Registra as teclas digitadas para roubar senhas e dados bancários.</li>
+                    </ul>
+                </li>
+                <li><strong>Vulnerabilidades:</strong> Fraquezas nos sistemas que podem ser exploradas por ameaças.</li>
+                <li><strong>Riscos:</strong> Probabilidades de uma ameaça explorar uma vulnerabilidade.</li>
+                <li><strong>Ataques:</strong> Ações concretas que exploram vulnerabilidades para causar danos.</li>
+            </ul>
 
-    <h3>8 Domínios do CISSP</h3>
-    <ol>
-      <li><strong>Segurança e Gestão de Riscos: </strong>Identificação e gerenciamento de ameaças e vulnerabilidades.
-        Envolve avaliação de risco, análise de impacto e implementação de controles.</li>
-      <li><strong>Segurança de Ativos: </strong>Proteção de dados e informações organizacionais.</li>
-      <li><strong>Engenharia de Segurança: </strong>Desenvolvimento de sistemas seguros, integrando controles desde a
-        fase de design.</li>
-      <li><strong>Comunicação e Segurança de Redes: </strong>Proteção de redes, firewalls e VPNs.</li>
-      <li><strong>Gestão de Identidade e Acesso: </strong>Garantir que apenas usuários autorizados possam acessar
-        sistemas.</li>
-      <li><strong>Avaliação e Teste de Segurança: </strong>Testes de penetração e auditorias de segurança.</li>
-      <li><strong>Operações de Segurança: </strong>Monitoramento contínuo e resposta a incidentes de segurança.</li>
-      <li><strong>Segurança no Desenvolvimento de Software: </strong>Implementação de práticas seguras no ciclo de vida
-        do software.</li>
-    </ol>
-  </section>
+            <div class="highlight">
+                <strong>→ Relação Fundamental:</strong> Ameaça + Vulnerabilidade = Risco. Um Risco materializado = Um Ataque.
+            </div>
 
-  <section> <!-- Curso 2 -->
-    <h2 class="course-name">Play It Safe: Manage Security Risks</h2>
-    <ul>
-      <li><strong>Framework: </strong>É um conjunto estruturado de diretrizes, boas práticas e padrões que ajudam as
-        organizações a gerenciar e proteger suas informações e sistemas contra ameaças cibernéticas.</li>
-      <ul>
-        <li><strong>NIST Risk Management Framework (RMF): </strong>O Quadro de Gestão de Riscos (RMF), desenvolvido pelo
-          Instituto Nacional de Padrões e Tecnologia (NIST). É projetado para gerenciar riscos e garantir a proteção de
-          sistemas e dados. É composto por sete etapas: Preparação, Categorização, Seleção de Controles, Implementação
-          de Controles, Avaliação de Controles, Autorização de Sistemas e Monitoramento Contínuo.</li>
-        <li><strong>ISO 27001: </strong>Padrão internacional para segurança da informação.</li>
-      </ul>
-    </ul>
+            <h3>Dados Sensíveis (PII e SPII)</h3>
+            <ul>
+                <li><strong>PII (Personally Identifiable Information):</strong> Qualquer informação que identifique uma pessoa como nome, endereço, número de telefone, etc.</li>
+                <li><strong>SPII (Sensitive Personally Identifiable Information):</strong> Informações críticas como números de segurança social, dados financeiros e registros médicos que requerem proteção adicional.</li>
+            </ul>
 
-    <ul>
-      <li><strong>Auditorias de Segurança: </strong>Processo sistemático para avaliar a segurança e conformidade com
-        regulamentos de sistemas e redes.</li>
-      <li><strong>OWASP Top 10: </strong>É uma lista das dez principais vulnerabilidades de segurança em aplicações web,
-        identificadas pelo Open Web Application Security Project (OWASP). Esta lista é atualizada periodicamente com
-        base em pesquisas e análises de vulnerabilidades encontradas no mundo real.</li>
-      <li><strong>Playbooks: </strong>Guias padronizados para resposta rápida a incidentes cibernéticos. Incluem
-        procedimentos para diferentes tipos de ameaças.</li>
-    </ul>
+            <h3>Os 8 Domínios do CISSP</h3>
+            <ol class="card-main-grid">
+                <li><strong>Segurança e Gestão de Riscos:</strong> Identificação e gerenciamento de ameaças e vulnerabilidades com avaliação de risco.</li>
+                <li><strong>Segurança de Ativos:</strong> Proteção de dados e informações organizacionais.</li>
+                <li><strong>Engenharia de Segurança:</strong> Desenvolvimento de sistemas seguros integrando controles desde o design.</li>
+                <li><strong>Comunicação e Segurança de Redes:</strong> Proteção de redes, firewalls e VPNs.</li>
+                <li><strong>Gestão de Identidade e Acesso:</strong> Garantir que apenas usuários autorizados acessem sistemas.</li>
+                <li><strong>Avaliação e Teste de Segurança:</strong> Testes de penetração e auditorias de segurança.</li>
+                <li><strong>Operações de Segurança:</strong> Monitoramento contínuo e resposta a incidentes.</li>
+                <li><strong>Segurança no Desenvolvimento de Software:</strong> Práticas seguras no ciclo de vida do software.</li>
+            </ol>
+        </section>
 
-    <h3>Seis Fases da Resposta a Incidentes</h3>
-    <ol>
-      <li><strong>Preparação: </strong>Definir políticas e treinamentos para lidar com incidentes.</li>
-      <li><strong>Identificação: </strong>Detectar e confirmar um incidente de segurança.</li>
-      <li><strong>Conter: </strong>Isolar e mitigar o impacto do incidente.</li>
-      <li><strong>Erradicar: </strong>Remover a ameaça do ambiente.</li>
-      <li><strong>Recuperar: </strong>Restaurar sistemas e serviços comprometidos.</li>
-      <li><strong>Aprendizado: </strong>Analisar o incidente e melhorar medidas preventivas.</li>
-    </ol>
-  </section>
+        <section>
+            <h2 class="course-name">Play It Safe: Manage Security Risks</h2>
 
-  <section> <!-- Curso 3 -->
-    <h2 class="course-name">Connect and Protect: Networks and Network Security</h2>
+            <h3>Frameworks de Segurança</h3>
+            <ul>
+                <li><strong>Framework:</strong> Conjunto estruturado de diretrizes, boas práticas e padrões para proteger informações e sistemas.
+                    <ul>
+                        <li><strong>NIST Risk Management Framework (RMF):</strong> Framework do Instituto Nacional de Padrões e Tecnologia com 7 etapas: Preparação, Categorização, Seleção de Controles, Implementação, Avaliação, Autorização e Monitoramento Contínuo.</li>
+                        <li><strong>ISO 27001:</strong> Padrão internacional para segurança da informação. <span class="tag">Global</span></li>
+                    </ul>
+                </li>
+                <li><strong>Auditorias de Segurança:</strong> Processo sistemático para avaliar segurança e conformidade com regulamentos.</li>
+                <li><strong>OWASP Top 10:</strong> Lista das dez principais vulnerabilidades em aplicações web, atualizada periodicamente com base em análises.</li>
+                <li><strong>Playbooks:</strong> Guias padronizados para resposta rápida a incidentes cibernéticos com procedimentos específicos.</li>
+            </ul>
 
-    <ul>
-      <li><strong>Network: </strong>Uma rede é grupo de dispositivos conectados.</li>
-      <li><strong>Handshake (Aperto de mão): </strong>Refere-se ao processo de troca de sinais entre dois dispositivos
-        para estabelecer uma conexão. É um procedimento inicial que garante que ambos os dispositivos estejam prontos
-        para se comunicar e que concordem com os parâmetros de comunicação. Envolve 3 passos:</li>
-      <ul>
-        <li><strong>SYN: </strong>O cliente envia um pacote SYN (synchronize) para o servidor, solicitando uma conexão.
-          É como se o cliente dissesse "Oi, quero conversar."</li>
-        <li><strong>SYN-ACK: </strong>O servidor responde com um pacote SYN-ACK (synchronize-acknowledge), reconhecendo
-          a solicitação do cliente e também solicitando a conexão. É como se o servidor respondesse "Oi, recebi sua
-          mensagem e estou pronto para conversar."</li>
-        <li><strong>ACK: </strong>O cliente responde com um pacote ACK (acknowledge), confirmando a solicitação do
-          servidor, e a conexão é estabelecida. Por fim, o cliente responde "Ok, estamos conectados e podemos começar a
-          conversar."</li>
-      </ul>
-    </ul>
+            <h3>Seis Fases da Resposta a Incidentes</h3>
+            <ol class="card-main-grid">
+                <li><strong>Preparação:</strong> Definir políticas e treinamentos para lidar com incidentes.</li>
+                <li><strong>Identificação:</strong> Detectar e confirmar um incidente de segurança.</li>
+                <li><strong>Conter:</strong> Isolar e mitigar o impacto do incidente.</li>
+                <li><strong>Erradicar:</strong> Remover a ameaça do ambiente comprometido.</li>
+                <li><strong>Recuperar:</strong> Restaurar sistemas e serviços comprometidos.</li>
+                <li><strong>Aprendizado:</strong> Analisar o incidente e melhorar medidas preventivas.</li>
+            </ol>
+        </section>
 
-    <h3>Identificação de Dispositivos</h3>
-    <ul>
-      <li><strong>Endereço IP: </strong>É um endereço único atribuído a cada dispositivo conectado à rede que utiliza o
-        protocolo IP. O formato desse endereço é definido pela versão do protocolo utilizada.</li>
-      <ul>
-        <li><strong>IPv4: </strong>Versão do IP que utiliza endereços de 32 bits, expressos como quatro números decimais
-          separados por pontos (por exemplo, 192.168.0.1). Oferece cerca de 4,3 bilhões de endereços únicos.</li>
-        <li><strong>IPv6: </strong>Versão do IP que utiliza endereços de 128 bits, expressos como oito grupos de quatro
-          dígitos hexadecimais separados por dois pontos (por exemplo, 2001:0db8:85a3:0000:0000:8a2e:0370:7334). Oferece
-          aproximadamente 3,4 × 10³⁸ endereços únicos.</li>
-      </ul>
-      <li><strong>Endereço MAC: </strong>Endereço único de 48 bits atribuído a interfaces de rede para identificação e
-        comunicação dentro de uma LAN. Fixo no hardware, mas pode ser alterado via software em alguns casos. O endereço
-        é representado em hexadecimal, geralmente no formato: XX:XX:XX:YY:YY:YY (padrão IEEE 802) ou XX-XX-XX-YY-YY-YY
-        (variação comum). Os primeiros 3 bytes (24 bits) representam o OUI (Organizationally Unique Identifier), que
-        identifica o fabricante do hardware. Os últimos 3 bytes (24 bits) são atribuídos pelo fabricante para
-        identificar cada dispositivo de forma única.
-      </li>
-    </ul>
+        <section>
+            <h2 class="course-name"> Connect and Protect: Networks and Network Security</h2>
 
-    <h3>Tipos de Redes</h3>
-    <ul>
-      <li><strong>LAN (Local Area Network): </strong>Rede local que conecta dispositivos dentro de uma área geográfica
-        restrita, como uma residência, empresa ou campus universitário. Utiliza tecnologias como Ethernet e Wi-Fi para
-        oferecer comunicação rápida e compartilhamento de recursos, como arquivos e impressoras. Geralmente, apresenta
-        baixa latência e alta taxa de transferência, sendo gerida por administradores locais, sem a necessidade de
-        infraestrutura de operadoras externas.</li>
-      <li><strong>WAN (Wide Area Network): </strong>Rede de longa distância que cobre uma grande área geográfica,
-        conectando dispositivos localizados em diferentes cidades, estados ou até países. As WANs interligam redes
-        menores, como LANs, permitindo a comunicação entre filiais de empresas, instituições acadêmicas ou usuários em
-        locais distantes. A internet é o maior exemplo de uma WAN.</li>
-      <li><strong>VPN (Virtual Private Network): </strong>Rede Privada Virtual que cria uma conexão segura e
-        criptografada entre um dispositivo e uma rede pela internet, garantindo a privacidade e a proteção dos dados
-        transmitidos. A VPN é usada para acessar redes corporativas remotamente, ocultar o endereço IP do usuário e
-        navegar com maior segurança, especialmente em redes públicas.</li>
-    </ul>
+            <h3>Fundamentos de Rede</h3>
+            <ul>
+                <li><strong>Network:</strong> Grupo de dispositivos conectados entre si.</li>
+                <li><strong>Handshake (3-Way):</strong> Processo de estabelecimento de conexão TCP com 3 etapas:
+                    <ul class="card-main-grid">
+                        <li><strong>SYN:</strong> Cliente envia pacote synchronize solicitando conexão.</li>
+                        <li><strong>SYN-ACK:</strong> Servidor responde reconhecendo e solicitando também.</li>
+                        <li><strong>ACK:</strong> Cliente confirma e a conexão é estabelecida.</li>
+                    </ul>
+                </li>
+            </ul>
 
-    <h3>Componentes e Dispositivos de Rede</h3>
-    <ul>
-      <li><strong>Hub: </strong>Dispositivo que recebe os dados de uma porta e os retransmite para todas as outras
-        portas da rede, sem analisar ou direcionar o tráfego. Isso significa que ele trabalha em broadcast, enviando os
-        pacotes para todos os dispositivos conectados, o que pode gerar colisões e congestionamento na rede. Como não
-        faz nenhuma filtragem ou controle de tráfego, o hub foi substituído por switches, que são mais eficientes. Opera
-        na 1ª camada do modelo OSI (física).</li>
-      <li><strong>Switch: </strong>Dispositivo que encaminha pacotes de dados de forma eficiente. Diferente do hub, ele
-        aprende os endereços MAC dos dispositivos conectados e envia os dados apenas para o destinatário correto,
-        reduzindo colisões e melhorando o desempenho da rede. Opera na 2ª camada (enlace). Switches mais avançados podem
-        operar na camada 3, funcionando também como roteadores.</li>
-      <li><strong>Router: </strong>Dispositivo que é responsável por conectar diferentes redes, roteando pacotes de
-        dados com base nos endereços IP. Ele escolhe a melhor rota para os pacotes chegarem ao destino. Um exemplo comum
-        é o roteador doméstico, que conecta redes locais à internet e gerencia o tráfego entre múltiplos dispositivos.
-        Opera na 3ª camada (rede).</li>
-      <li><strong>Modem: </strong>Dispositivo que converte sinais digitais em analógicos (e vice-versa) para permitir a
-        comunicação entre redes diferentes. Por exemplo, em conexões DSL, o modem converte os sinais do provedor para um
-        formato que os dispositivos da rede local possam entender. Muitos modems modernos já vêm integrados a
-        roteadores. Opera na 1ª camada (física). No entanto, modems modernos podem ter funcionalidades adicionais, como
-        roteamento e NAT (Network Address Translation), que pertencem à 3ª camada (rede). Isso acontece porque muitos
-        dispositivos hoje combinam modem e roteador no mesmo equipamento.</li>
-      <li><strong>Server: </strong>Computador ou sistema que fornece serviços, recursos ou dados para outros
-        dispositivos na rede (clientes). Pode desempenhar diversas funções, como servidor web (hospeda sites), servidor
-        de arquivos (armazenamento e compartilhamento de arquivos), servidor de banco de dados, entre outros. O servidor
-        pode operar em diferentes camadas, dependendo do tipo de serviço. Na camada 4 (transporte), se estiver
-        utilizando protocolos de transporte como TCP/UDP. Na camada 7 (aplicação), Se for um servidor web ou de banco de
-        dados, ele interage com protocolos como HTTP, FTP, SQL, etc.
-      </li>
-      <li><strong>Proxy: </strong>Servidor intermediário entre o cliente e a internet. Ele pode armazenar em cache
-        conteúdos acessados com frequência para melhorar o desempenho, ocultar o IP real do usuário para aumentar a
-        privacidade ou bloquear acessos indesejados. Pode ser usado para filtragem de conteúdo, balanceamento de carga e
-        segurança. O proxy opera principalmente nas camadas 3 (Rede) e 7 (Aplicação), já que ele pode redirecionar o
-        tráfego de rede com base em endereços IP ou analisar o conteúdo das aplicações.
-      </li>
-      <li><strong>Firewall: </strong>Sistema que monitora e controla o tráfego de rede com base em regras de segurança.
-        Pode ser implementado como software ou hardware. Atua bloqueando acessos não autorizados e prevenindo ataques,
-        operando principalmente nas camadas de rede (3ª) e transporte (4ª), podendo chegar até a aplicação (7ª).
-        Firewalls podem ser configurados para permitir ou negar tráfego com base em IPs, portas, protocolos e até
-        análise de pacotes (Deep Packet Inspection - DPI).</li>
-    </ul>
+            <h3>Identificação de Dispositivos</h3>
+            <ul>
+                <li><strong>Endereço IP:</strong> Identificador único para cada dispositivo conectado à rede.
+                    <ul class="card-main">
+                        <li><strong>IPv4:</strong> Versão com 32 bits, formato decimal (ex: 192.168.0.1). Oferece aproximadamente 4,3 bilhões de endereços únicos.</li>
+                        <li><strong>IPv6:</strong> Versão com 128 bits, formato hexadecimal. Oferece ~3,4 × 10³⁸ endereços. <span class="tag">Futuro</span></li>
+                    </ul>
+                </li>
+                <li><strong>Endereço MAC:</strong> Endereço físico de 48 bits para identificação em LAN. Formato: XX:XX:XX:YY:YY:YY. Primeiros 3 bytes identificam o fabricante (OUI), últimos 3 identificam o dispositivo.</li>
+            </ul>
 
-    <h3>Computação em Nuvem</h3>
-    <ul>
-      <li><strong>Cloud Network: </strong>Arquitetura de rede que suporta serviços em nuvem, permitindo comunicação e
-        compartilhamento de recursos via internet.</li>
-      <li><strong>Cloud Service Providers (CSPs): </strong>Provedores de Serviços em Nuvem que oferecem modelos
-        distintos de computação em nuvem:
-        <ul>
-          <li><strong>Software as a Service (SaaS): </strong>Aplicações hospedadas na nuvem e acessadas via internet,
-            sem necessidade de instalação local.</li>
-          <li><strong>Infrastructure as a Service (IaaS): </strong>Infraestrutura virtualizada, incluindo servidores,
-            armazenamento e redes configuráveis remotamente.</li>
-          <li><strong>Platform as a Service (PaaS): </strong>Ambiente de desenvolvimento e execução de aplicativos na
-            nuvem, incluindo ferramentas e frameworks.</li>
-        </ul>
-      </li>
-      <li><strong>Hybrid Cloud Environments: </strong>Ambientes de Nuvem Híbrida são uma combinação entre infraestrutura
-        local (on-premise) e serviços em nuvem, para maior flexibilidade e redução de custos. Quando múltiplos CSPs são
-        utilizados, o ambiente é chamado de multi-cloud.</li>
-      <li><strong>Software-Defined Networks (SDNs): </strong>Redes Definidas por Software são redes virtualizadas
-        gerenciadas por software, permitindo configurações dinâmicas e maior automação. Elas incluem firewalls,
-        roteadores e switches definidos por software, otimizando desempenho e segurança.</li>
-    </ul>
+            <h3>Tipos de Redes</h3>
+            <ul>
+                <li><strong>LAN (Local Area Network):</strong> Rede local conectando dispositivos em área geográfica restrita (casa, empresa, campus). Baixa latência e alta velocidade.</li>
+                <li><strong>WAN (Wide Area Network):</strong> Rede de longa distância cobrindo múltiplas cidades ou países. A Internet é o maior exemplo de WAN.</li>
+                <li><strong>VPN (Virtual Private Network):</strong> Conexão segura e criptografada pela Internet, ocultando IP e protegendo dados. <span class="tag">Segura</span></li>
+            </ul>
 
-    <h3>Modelos de Comunicação de Redes</h3>
-    <ul>
-      <li><strong>Modelo TCP/IP: </strong>É um framework usado para visualizar como os dados são organizados e
-        transferidos pela rede. Tem 4 camadas: Camada de Acesso à rede, Camada de Internet, Camada de Transporte e
-        Camada de Aplicação.
-      </li>
-      <ol>
-        <li><strong>Camada de Acesso à rede: </strong>É responsável pela transmissão física de dados entre dispositivos
-          na mesma rede. Ela lida com os detalhes da interface com o hardware da rede e os métodos de acesso ao meio
-          físico. Tecnologias como Ethernet e Wi-Fi operam nesta camada, garantindo que os dados sejam formatados
-          corretamente para a transmissão e gerenciando o acesso ao meio de transmissão compartilhado.</li>
-        <li><strong>Camada de Internet: </strong>Gerencia a transmissão de pacotes de dados entre dispositivos em redes
-          diferentes. Esta camada concentra-se no endereçamento lógico e no roteamento de pacotes, utilizando o
-          Protocolo IP (Internet Protocol) como principal protocolo. Suas funções incluem a atribuição e reconhecimento
-          de endereços IP para dispositivos, a determinação do melhor caminho para os pacotes de dados e a fragmentação
-          e remontagem de pacotes grandes.</li>
-        <li><strong>Camada de Transporte: </strong>Assegura que os dados sejam entregues de forma confiável e ordenada
-          entre dois dispositivos. Os principais protocolos nesta camada são o TCP (Transmission Control Protocol) e o
-          UDP (User Datagram Protocol). As funções desta camada incluem o estabelecimento de conexões, controle de
-          fluxo, correção de erros, segmentação e remontagem de dados, garantindo que a comunicação ocorra sem problemas
-          e sem perda de informações.</li>
-        <li><strong>Camada de Aplicação: </strong>Fornece interfaces e serviços de rede diretamente para as aplicações
-          do usuário final. Protocolos de alto nível, como HTTP (Hypertext Transfer Protocol), FTP (File Transfer
-          Protocol) e SMTP (Simple Mail Transfer Protocol), operam nesta camada. Suas funções principais incluem o
-          gerenciamento de sessões de comunicação, a facilitação da troca de dados entre softwares, a verificação de
-          identidades e permissões dos usuários e a formatação e codificação de dados para serem processados pelas
-          aplicações.</li>
-      </ol>
-      <li><strong>TCP (Transmission Control Protocol): </strong>Permite que dois dispositivos estabeleçam uma conexão e
-        transmitam dados de forma organizada e confiável. Ele garante que os pacotes de dados cheguem ao destino
-        correto.
-      </li>
-      <li><strong>IP (Internet Protocol): </strong>Protocolo de Internet, É o conjunto de regras que define como os
-        dados são endereçados e encaminhados entre dispositivos em redes diferentes. O protocolo IP não garante a
-        entrega dos
-        pacotes, apenas envia para o destino. Ele também divide pacotes grandes em fragmentos menores e garante a
-        reassemblagem no destino. Possui versões, como IPv4 e IPv6,
-        que determinam não só o formato dos endereços, mas também aspectos de funcionamento, como a fragmentação de
-        pacotes.
-        <ul>
-          <li>
-            No <strong>IPv4</strong>, os pacotes podem fragmentados para se adequar às limitações da rede e, em seguida,
-            reagrupados no destino.
-          </li>
-          <li>No <strong>IPv6</strong>, a fragmentação é tratada de forma diferente: os roteadores não fragmentam os
-            pacotes, e cabe ao dispositivo de origem ajustar o tamanho dos pacotes.
-          </li>
-        </ul>
+            <h3>Dispositivos de Rede</h3>
+            <ul class="card-main-grid">
+                <li><strong>Hub:</strong> Retransmite dados para todas as portas (broadcast). Gera colisões e congestionamento. Opera na Camada 1 (Física).</li>
+                <li><strong>Switch:</strong> Encaminha pacotes de forma eficiente, aprende endereços MAC e evita colisões. Opera na Camada 2 (Enlace).</li>
+                <li><strong>Router:</strong> Conecta diferentes redes e roteia pacotes baseado em endereços IP. Opera na Camada 3 (Rede).</li>
+                <li><strong>Modem:</strong> Converte sinais digitais em analógicos para comunicação entre redes. Opera na Camada 1 (Física).</li>
+                <li><strong>Server:</strong> Fornece serviços e recursos para clientes (web, arquivos, banco de dados, etc).</li>
+                <li><strong>Proxy:</strong> Servidor intermediário entre cliente e internet. Armazena cache, oculta IP e filtra conteúdo. Opera nas Camadas 3 e 7.</li>
+                <li><strong>Firewall:</strong> Monitora e controla tráfego baseado em regras de segurança. Bloqueia acessos não autorizados. <span class="tag">Crítico</span></li>
+            </ul>
 
-      <li><strong>Porta: </strong>Uma porta é um local baseado em software que organiza o envio e o recebimento de
-        dados
-        entre dispositivos em uma rede. As portas dividem o tráfego da rede em segmentos com base no serviço que
-        elas
-        executarão entre dois dispositivos.</li>
-    </ul>
+            <h3>Computação em Nuvem</h3>
+            <ul>
+                <li><strong>Cloud Service Providers:</strong> Provedores oferecem diferentes modelos:
+                    <ul class="card-main-grid">
+                        <li><strong>SaaS:</strong> Aplicações hospedadas na nuvem, acessadas via web.</li>
+                        <li><strong>IaaS:</strong> Infraestrutura virtualizada (servidores, storage, rede) configurável remotamente.</li>
+                        <li><strong>PaaS:</strong> Ambiente de desenvolvimento e execução de aplicações na nuvem.</li>
+                    </ul>
+                </li>
+                <li><strong>Hybrid Cloud:</strong> Combinação de infraestrutura local (on-premise) e serviços em nuvem.</li>
+                <li><strong>Software-Defined Networks (SDN):</strong> Redes virtualizadas gerenciadas por software para maior automação.</li>
+            </ul>
 
-    <ul>
-      <li><strong>Modelo OSI (Open Systems Interconnection): </strong>É um modelo teórico criado pela ISO
-        (International
-        Organization for Standardization) para padronizar a comunicação entre sistemas de redes. Ele organiza essa
-        comunicação em 7 camadas, cada uma com funções específicas.</li>
-      <ol>
-        <li><strong>Camada Física: </strong>A camada física é responsável por transmitir os bits brutos pelo meio de
-          comunicação, como cabos de rede, ondas de rádio e fibra óptica. Ela define características elétricas,
-          mecânicas e ópticas, incluindo voltagem, frequência e modulação do sinal. Nessa camada, dispositivos como
-          hubs, repetidores e conectores atuam na transmissão dos dados sem qualquer interpretação do conteúdo.</li>
-        <li><strong>Camada de Enlace de Dados: </strong>A camada de enlace garante que os dados sejam entregues de
-          forma
-          confiável dentro de uma rede local, corrigindo erros e controlando o fluxo de dados. Essa camada usa
-          endereços
-          físicos (endereços MAC), para identificar dispositivos. Switches e bridges operam nessa camada,
-          organizando
-          os
-          dados em quadros antes da transmissão.</li>
-        <ul>
-          <li>
-            <strong>O MAC (Media Access Control)</strong> é um sistema de controle responsável por gerenciar a
-            comunicação entre dispositivos em uma rede local. Ele define como os dispositivos enviam e recebem
-            dados,
-            garantindo que a transmissão ocorra de forma organizada e sem interferências. O MAC usa endereços
-            físicos
-            exclusivos para identificar cada dispositivo dentro da rede.
-          </li>
-        </ul>
-        <li><strong>Camada de Rede: </strong>A camada de rede é responsável pelo roteamento dos pacotes entre
-          diferentes
-          redes, utilizando endereços IP para identificar dispositivos. Essa camada escolhe o melhor caminho para os
-          dados chegarem ao destino. Roteadores trabalham nessa camada, encaminhando pacotes baseados em
-          endereçamento
-          lógico, como o IPv4 e IPv6.</li>
-        <li><strong>Camada de Transporte: </strong>A camada de transporte gerencia a comunicação entre os sistemas
-          finais, garantindo que os dados sejam entregues corretamente e na ordem certa. Ela pode fornecer um
-          serviço confiável, usando o protocolo TCP (orientado à conexão), ou um serviço mais rápido, mas sem garantias,
-          usando o protocolo UDP (não orientado à conexão).</li>
-        <ul>
-          <li><strong>UDP (User Datagram Protocol): </strong>O Protocolo de Datagrama de Usuário é um protocolo de
-            comunicação não orientado à conexão, ou seja, não estabelece um vínculo formal entre os dispositivos antes
-            de transmitir dados. Ele não garante a entrega nem a ordem dos pacotes, mas, em compensação, é mais rápido e
-            consome menos recursos que o TCP. Por essa razão, é ideal para aplicações onde a velocidade é mais
-            importante que a confiabilidade, como transmissões de vídeo, jogos online e chamadas de voz.</li>
-        </ul>
-        <li><strong>Camada de Sessão: </strong>A camada de sessão estabelece, mantém e encerra conexões entre
-          aplicações em dispositivos diferentes. Ela permite que sessões de comunicação permaneçam ativas enquanto
-          necessário e pode reiniciar transmissões interrompidas.</li>
-        <li><strong>Camada de Apresentação: </strong>A camada de apresentação transforma os dados para que possam
-          ser compreendidos pela camada de aplicação. Ela realiza tarefas como criptografia (SSL/TLS), compressão e
-          conversão de formatos de arquivos, como codificação MIME para anexos de e-mail.</li>
-        <li><strong>Camada de Aplicação: </strong>A camada de aplicação é a interface entre o usuário e a rede,
-          permitindo que os programas utilizem os serviços da internet. Protocolos como HTTP, HTTPS, SMTP, FTP e DNS
-          operam aqui, garantindo que e-mails sejam enviados, páginas da web sejam carregadas e arquivos sejam
-          transferidos corretamente.</li>
-        <ul>
-          <li><strong>HTTP/HTTPS (Hypertext Transfer Protocol/Secure): </strong>O Protocolo de Transferência de
-            Hipertexto é responsável pela comunicação entre navegadores e servidores web, permitindo o acesso a páginas
-            da internet. O HTTP não oferece criptografia, o que pode expor dados a interceptações. Já o HTTPS, sua
-            versão segura, utiliza criptografia por meio do protocolo TLS/SSL, garantindo a proteção das informações
-            transmitidas.</li>
-          <ul>
-            <li><strong>SSL (Secure Sockets Layer): </strong>A Camada de Soquetes Segura foi um dos primeiros protocolos
-              de segurança desenvolvidos para criptografar a comunicação na internet, protegendo dados transmitidos
-              entre servidores e navegadores. Apesar de ter sido amplamente adotado, tornou-se obsoleto devido a
-              vulnerabilidades que comprometeram sua segurança. Hoje, o SSL foi substituído por versões mais avançadas
-              do TLS, mas o termo ainda é usado informalmente para se referir à criptografia em sites HTTPS.</li>
-            <li><strong>TLS (Transport Layer Security): </strong>A Segurança da Camada de Transporte é a evolução do
-              SSL, oferecendo criptografia mais forte e maior proteção contra ataques cibernéticos. Ele garante que os
-              dados transmitidos permaneçam privados e nalterados, sendo amplamente utilizado em conexões HTTPS, e-mails
-              e outras comunicações seguras. As versões mais utilizadas atualmente são TLS 1.2 e TLS 1.3, que melhoram o
-              desempenho e a segurança da transmissão de informações.</li>
-          </ul>
-          <li><strong>FTP (File Transfer Protocol): </strong>O Protocolo de Transferência de Arquivos permite que
-            usuários autorizados possam fazer download e upload de arquivos de um servidor FTP, um computador que
-            armazena os dados.
-          </li>
-          <li><strong>DNS (Domain Name System): </strong> O Sistema de Nomes de Domínios funciona como um sistema de
-            tradução de endereços IP para nomes de domínios.</li>
-          <li><strong>SSH (Secure Shell): </strong>Protocolo que garante que cliente e servidor remoto troquem
-            informações de maneira segura e dinâmica. O processo é capaz de criptografar os arquivos enviados ao
-            diretório do servidor, garantindo que alterações e o envio de dados sejam realizados da melhor forma.
-          </li>
-        </ul>
-      </ol>
-    </ul>
+            <h3>Protocolos Essenciais</h3>
+            <ul class="card-main-grid">
+                <li><strong>TCP:</strong> Transmission Control Protocol, permite conexão confiável e ordenada.</li>
+                <li><strong>UDP:</strong> User Datagram Protocol, sem conexão, mais rápido mas sem garantias. Ideal para vídeo e jogos.</li>
+                <li><strong>HTTP/HTTPS:</strong> Protocolo de transferência de hipertexto (HTTPS usa criptografia TLS/SSL).</li>
+                <li><strong>FTP:</strong> File Transfer Protocol para transferência de arquivos.</li>
+                <li><strong>DNS:</strong> Domain Name System, traduz endereços IP em nomes de domínio.</li>
+                <li><strong>SSH:</strong> Secure Shell para acesso remoto seguro com criptografia.</li>
+                <li><strong>TLS/SSL:</strong> Protocolos de criptografia para comunicação segura na web.</li>
+            </ul>
 
-    <h3>Ataques Comuns em Redes</h3>
-    <ul>
-      <li><strong>DoS (Denial of Service): </strong>Ataque que visa sobrecarregar um sistema, tornando-o
-        indisponível.</li>
-      <li><strong>DDoS (Distributed Denial of Service): </strong>Ataque DoS distribuído, usando múltiplos
-        dispositivos para amplificar o impacto.</li>
-      <li><strong>IP Spoofing: </strong>Técnica de falsificação do endereço IP para enganar sistemas de segurança.</li>
-      <li><strong>Man-in-the-Middle (MitM): </strong>Interceptação e possível alteração de comunicação entre dois
-        dispositivos.</li>
-      <li><strong>Phishing: </strong>Engenharia social para roubar informações pessoais.</li>
-      <li><strong>Spear Phishing: </strong>Phishing mais direcionado e personalizado.</li>
-      <li><strong>Whaling: </strong>Phishing focado em executivos ou pessoas de alto cargo.</li>
-    </ul>
-  </section>
+            <h3>Ataques Comuns em Redes</h3>
+            <ul class="card-main-grid">
+                <li><strong>DoS (Denial of Service):</strong> Ataque que visa sobrecarregar sistema tornando-o indisponível.</li>
+                <li><strong>DDoS (Distributed Denial of Service):</strong> Ataque DoS distribuído usando múltiplos dispositivos. <span class="tag">Crítico</span></li>
+                <li><strong>IP Spoofing:</strong> Técnica de falsificação do endereço IP para enganar sistemas.</li>
+                <li><strong>Man-in-the-Middle:</strong> Interceptação e possível alteração de comunicação entre dispositivos.</li>
+                <li><strong>Phishing:</strong> Engenharia social para roubar informações pessoais.</li>
+                <li><strong>Spear Phishing:</strong> Phishing mais direcionado e personalizado contra alvos específicos.</li>
+                <li><strong>Whaling:</strong> Phishing focado em executivos ou pessoas de alto cargo.</li>
+            </ul>
+        </section>
 
-  <section> <!-- Curso 4 -->
-    <h2 class="course-name">Tools of the Trade: Linux and SQL</h2>
-    <h3>Sistemas Operacionais</h3>
-    <ul>
-      <li><strong>Operating System: </strong>Sistema Operacional é um software fundamental que gerencia os recursos do
-        hardware e
-        fornece serviços para os programas de um computador ou dispositivo eletrônico. Ele atua como uma
-        <strong>interface entre o hardware e o software</strong>, permitindo a execução de aplicativos e garantindo a
-        comunicação eficiente entre os componentes do sistema. Os principais são:
-        <ul>
-          <br>
-          <li><strong>Windows e macOS: </strong>O Windows e o macOS são sistemas operacionais comuns. O sistema
-            operacional Windows foi lançado em 1985, e o macOS foi lançado em 1984. Ambos os sistemas operacionais são
-            usados em computadores pessoais e corporativos. O Windows é um software operacional de código fechado, o que
-            significa que o código fonte não é compartilhado livremente com o público. O macOS é parcialmente de código
-            aberto. Ele tem alguns componentes de código aberto, como o kernel do macOS. O macOS também tem alguns
-            componentes de software proprietário.</li>
-          <li><strong>Linux: </strong>A primeira versão do Linux foi lançada em 1991, e outras versões importantes foram
-            lançadas no início da década de 1990. O Linux é um sistema operacional totalmente de código aberto, o que
-            significa que qualquer pessoa pode acessar o Linux e seu código-fonte. A natureza de código aberto do Linux
-            permite que os desenvolvedores da comunidade Linux colaborem entre si. O Linux é particularmente importante
-            para o setor de segurança. Há algumas distribuições que foram projetadas especificamente para a segurança.
-            Mais adiante neste curso, você aprenderá sobre o Linux e sua importância para o setor de segurança.</li>
-          <li><strong>O ChromeOS: </strong>Lançado em 2011, deriva do Chromium OS, que é totalmente aberto. O ChromeOS é
-            frequentemente utilizado na área da educação devido à sua leveza e integração com serviços em nuvem.</li>
-          <li><strong>Android e iOS: </strong>No campo dos dispositivos móveis, Android e iOS são os principais sistemas
-            operacionais. O Android foi disponibilizado ao público em 2008 e é de código aberto, permitindo grande
-            personalização por fabricantes de dispositivos. Já o iOS, lançado em 2007, possui uma abordagem mais
-            fechada, embora contenha alguns componentes de código aberto.</li>
-          <li><strong>Legacy operating systems: </strong>Um sistema operacional legado é um sistema operacional
-            desatualizado, mas que ainda está
-            sendo usado. Algumas organizações continuam a usar sistemas operacionais legados porque o software do qual
-            dependem não é compatível com os sistemas operacionais mais recentes. Isso pode ser mais comum em setores
-            que usam muitos equipamentos que requerem software incorporado - software que é colocado dentro de
-            componentes do equipamento</li>
-        </ul>
-      </li>
-    </ul>
+        <section>
+            <h2 class="course-name">Tools of the Trade: Linux and SQL</h2>
 
-    <h3>Solicitações do Sistema Operacional</h3>
-    <ul>
-      <li>
-        <strong>Inicializar (Boot):</strong>
-        Quando um computador é ligado, um microchip BIOS ou UEFI é ativado. O <strong>BIOS (Basic Input/Output
-          System)</strong> é um microchip que contém instruções de inicialização para o computador e é comum em sistemas
-        mais antigos. O <strong>UEFI (Unified Extensible Firmware Interface)</strong> substitui o BIOS em sistemas
-        modernos.
-        <p>Esses microchips contêm várias instruções de inicialização, como verificar a integridade do hardware. A
-          última instrução ativa o <strong>bootloader</strong>, um programa que inicia o sistema operacional. Quando a
-          inicialização é concluída, o computador está pronto para uso. O BIOS foi o padrão até 2007, quando o UEFI
-          começou a ser mais utilizado, trazendo recursos de segurança aprimorados.</p>
-      </li>
-      <li>
-        <strong>Executando uma Tarefa:</strong>
-        Após a inicialização, a execução de uma tarefa no computador segue quatro etapas:
-        <ol>
-          <li><strong>Usuário:</strong> O processo começa com o usuário, que solicita realizar uma tarefa no computador,
-            como acessar um documento ou abrir um aplicativo.</li>
-          <li><strong>Aplicação:</strong> A aplicação é o programa de software com o qual o usuário interage para
-            realizar a tarefa. Exemplo: usar a calculadora ou um processador de texto.</li>
-          <li><strong>Sistema Operacional:</strong> O sistema operacional recebe a solicitação da aplicação, interpreta
-            e direciona a solicitação para os componentes do hardware necessários.</li>
-          <li><strong>Hardware:</strong> O hardware realiza o processamento necessário. Exemplo: a CPU realiza cálculos
-            e o disco rígido salva arquivos. Após o processamento, o hardware envia os resultados de volta ao sistema
-            operacional, que os exibe na aplicação para o usuário.</li>
-        </ol>
-      </li>
-    </ul>
+            <h3>Sistemas Operacionais</h3>
+            <ul>
+                <li><strong>Operating System:</strong> Software fundamental que gerencia recursos do hardware e fornece serviços para programas. Atua como interface entre hardware e software.
+                    <ul>
+                        <li><strong>Windows e macOS:</strong> SOs comuns em computadores. Windows (1985) é código fechado. macOS (1984) é parcialmente aberto.</li>
+                        <li><strong>Linux:</strong> Sistema totalmente de código aberto lançado em 1991. Essencial para o setor de segurança.</li>
+                        <li><strong>ChromeOS:</strong> Sistema leve lançado em 2011, integrado com serviços em nuvem para educação.</li>
+                        <li><strong>Android e iOS:</strong> Principais SOs móveis. Android (2008) é aberto. iOS (2007) é fechado.</li>
+                        <li><strong>Legacy Operating Systems:</strong> Sistemas desatualizados ainda em uso por compatibilidade com software específico.</li>
+                    </ul>
+                </li>
+            </ul>
 
-    <h3>Máquinas Virtuais e Virtualização</h3>
-    <ul>
-      <li>
-        <strong>Virtual Machine (VM):</strong>
-        Uma máquina virtual é uma versão virtual de um computador físico. A virtualização é o processo de usar
-        software para criar representações virtuais de máquinas físicas. Essas máquinas não existem fisicamente, mas
-        operam como se fossem reais, pois o software simula o hardware físico. Uma VM utiliza componentes virtuais, como
-        CPU e armazenamento, sem depender de hardware dedicado. Diversas VMs podem ser executadas em um único computador
-        físico, compartilhando seus recursos.
-      </li>
-    </ul>
+            <h3>Inicialização do Sistema (Boot)</h3>
+            <ul>
+                <li><strong>BIOS:</strong> Basic Input/Output System é um microchip com instruções de inicialização. Comum em sistemas antigos até 2007.</li>
+                <li><strong>UEFI:</strong> Unified Extensible Firmware Interface substitui BIOS em sistemas modernos com recursos de segurança melhorados.</li>
+                <li><strong>Bootloader:</strong> Programa que inicia o sistema operacional após verificações do hardware.</li>
+            </ul>
 
-    <h3>CLI vs. GUI</h3>
-    <ul>
-      <li>
-        <strong>Graphical User Interface (GUI): </strong>Uma Interface Gráfica de Usuário é uma interface que utiliza
-        ícones na tela para gerenciar tarefas no computador. Uma GUI permite que o usuário faça
-        uma solicitação por vez.
-      </li>
-      <li>
-        <strong>Command Line Interface (CLI):</strong> Já uma Interface de Linha de Comando é baseada em texto e usa
-        comandos para interagir com o computador. Uma CLI permite enviar múltiplas solicitações simultaneamente.
-      </li>
-    </ul>
+            <h3>Arquitetura Linux</h3>
+            <ul class="card-main-grid">
+                <li><strong>Usuário:</strong> A pessoa que interage com o computador. Linux é multiusuário (múltiplos usuários simultaneamente).</li>
+                <li><strong>Aplicativos:</strong> Programas específicos instalados via gerenciador de pacotes.</li>
+                <li><strong>Shell:</strong> Interpretador de linha de comando que traduz comandos para o kernel.</li>
+                <li><strong>Filesystem Hierarchy Standard (FHS):</strong> Padrão que organiza arquivos e diretórios no Linux.</li>
+                <li><strong>Kernel:</strong> Gerencia processos, memória e I/O. Core fundamental do sistema.</li>
+            </ul>
 
-    <h3>Arquitetura do Linux</h3>
-    <p>A solicitação para concluir uma tarefa começa com o usuário e flui através de aplicativos, shell, o Filesystem
-      Hierarchy Standard (FHS), o kernel e o hardware.</p>
-    <ul>
-      <li>
-        <strong>Usuário: </strong>O usuário é a pessoa que interage com o computador. Ele inicia e gerencia as tarefas
-        do sistema. O Linux é um sistema multiusuário, o que significa que múltiplos usuários podem usar os mesmos
-        recursos ao mesmo tempo.
-      </li>
-      <li>
-        <strong>Aplicativos: </strong>Um aplicativo é um programa que realiza uma tarefa específica. No Linux,
-        frequentemente você usará um gerenciador de pacotes para instalar aplicativos. Um gerenciador de
-        pacotes é uma ferramenta que auxilia os usuários a instalar, gerenciar e remover pacotes ou aplicativos. Um
-        pacote é um pedaço de software que pode ser combinado com outros pacotes para formar um aplicativo completo.
-      </li>
-      <li>
-        <strong>Shell: </strong>O shell é o interpretador de linha de comando. Tudo o que é inserido no shell é baseado
-        em texto. O shell permite que os usuários enviem comandos ao kernel e recebam respostas dele. Pode-se pensar no
-        shell como um tradutor entre o usuário e o computador, pois ele traduz os comandos digitados para que o sistema
-        execute as tarefas solicitadas.
-      </li>
-      <li>
-        <strong>Filesystem Hierarchy Standard (FHS): </strong>O Padrão de Hierarquia do Sistema de Arquivos é o
-        componente do sistema operacional Linux que organiza os dados. Ele especifica os locais onde os dados são
-        armazenados no sistema operacional. Um diretório é um arquivo que organiza onde outros arquivos são armazenados.
-        Diretórios às vezes são chamados de “pastas” e podem conter arquivos ou outros diretórios. O FHS define como os
-        diretórios, os conteúdos desses diretórios e outros armazenamentos são organizados, para que o sistema
-        operacional saiba onde encontrar dados específicos.
-      </li>
-      <li>
-        <strong>Kernel: </strong>O kernel é o componente do sistema operacional Linux que gerencia os processos e a
-        memória. Ele se comunica com os aplicativos para direcionar os comandos. O kernel é único para o sistema Linux e
-        é fundamental para a alocação de recursos no sistema. Ele controla todas as funções principais do hardware, o
-        que pode ajudar a acelerar a execução de tarefas de maneira mais eficiente.
-      </li>
-    </ul>
-  </section>
+            <h3>Interface de Usuário</h3>
+            <ul>
+                <li><strong>GUI (Graphical User Interface):</strong> Interface com ícones que permite gerenciar tarefas visualmente. Uma solicitação por vez.</li>
+                <li><strong>CLI (Command Line Interface):</strong> Interface baseada em texto com comandos. Permite múltiplas solicitações simultâneas. <span class="tag">Mais Poderosa</span></li>
+            </ul>
+        </section>
+    </div>
 </body>
-
 </html>
