@@ -1,10 +1,10 @@
 # Lista de Canais do YouTube sobre Cibersegurança
 
-> A seguir uma Lista dos melhores criadores de conteúdo do Youtube do Brasil e do mundo que compartilham conhecimento prático e gratuito sobre Cyber Segurança, Hack ético, redes e defesa cibernética.
+> A seguir uma Lista dos melhores criadores de conteúdo do Youtube do Brasil e do mundo que compartilham conhecimento prático e gratuito sobre cibersegurança, hacking ético, redes e defesa cibernética.
 
-## Canais Brasileiros de Cibersegurança
+## Canais Brasileiros de Cibersegurançacibersegurança
 
-▶️ **[Gabriel Pato](https://www.youtube.com/c/GabrielPato)**  
+▶️ **[Gabriel Pato](https://www.youtube.com/c/GabrielPato)**
 Um dos maiores canais sobre segurança da informação do Brasil. Perfeito para construir uma base sólida e entender o "porquê" das coisas, além de se manter atualizado sobre o que acontece no mundo da cibersegurança de forma didática.
 
 ▶️ **[Guia Anônima](https://www.youtube.com/@guianonima)**  
