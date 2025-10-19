@@ -32,6 +32,9 @@ Canal focado em segurança no desenvolvimento de software. Apresenta conceitos d
 ▶️ **[Filipe Deschamps](https://www.youtube.com/@FilipeDeschamps)**  
 Embora não seja um canal exclusivo de segurança, é essencial para desenvolvedores. Frequentemente aborda notícias e conceitos de segurança que impactam o mundo da programação e da tecnologia em geral.
 
+▶️ **[Solyd Offensive Security](https://www.youtube.com/@solyd/videos)**
+O canal Solyd Offensive Security é focado em ensinar cibersegurança e hacking ético na prática.
+
 
 
 ---
